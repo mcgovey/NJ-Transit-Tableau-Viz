@@ -248,7 +248,7 @@ LEFT(arrival_time,
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File MaxRecords="" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\TransitData.csv</File>
+          <File MaxRecords="" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\TransitData.csv</File>
           <Passwords />
           <FormatSpecificOptions>
             <LineEndStyle>CRLF</LineEndStyle>
@@ -390,31 +390,6 @@ LEFT(arrival_time,
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="21">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1422" y="402" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_11636_a401e8c0bd8f440ebf05a49085c9a96d\Engine_3424_50847e4572ae439b8b7c943faf1a2722.yxdb</TempFile>
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Table</DefaultTab>
-              <Hints />
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
     <Node ToolID="22">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
         <Position x="1074" y="186" />
@@ -523,119 +498,6 @@ LEFT(arrival_time,
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
-    </Node>
-    <Node ToolID="26">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="1086" y="474" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <Expression>[IsMaxTrip] = 1
-AND
-[direction_id] = 1</Expression>
-          <Mode>Custom</Mode>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>[IsMaxTrip] = 1
-AND
-[direction_id] = 1</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
-    </Node>
-    <Node ToolID="27">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1182" y="462" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <OrderChanged value="False" />
-          <SelectFields>
-            <SelectField field="arrival_time" selected="False" />
-            <SelectField field="departure_time" selected="False" />
-            <SelectField field="pickup_type" selected="False" />
-            <SelectField field="drop_off_type" selected="False" />
-            <SelectField field="shape_dist_traveled" selected="False" />
-            <SelectField field="trip_headsign" selected="False" />
-            <SelectField field="direction_id" selected="False" />
-            <SelectField field="block_id" selected="False" />
-            <SelectField field="shape_id" selected="False" />
-            <SelectField field="stop_desc" selected="False" />
-            <SelectField field="stop_lat" selected="False" />
-            <SelectField field="stop_lon" selected="False" />
-            <SelectField field="zone_id" selected="False" />
-            <SelectField field="agency_id" selected="False" />
-            <SelectField field="route_short_name" selected="False" />
-            <SelectField field="route_type" selected="False" />
-            <SelectField field="route_url" selected="False" />
-            <SelectField field="route_color" selected="False" />
-            <SelectField field="ArrivalHour" selected="False" />
-            <SelectField field="ArrivalTimeDec" selected="False" />
-            <SelectField field="RouteMaxStops" selected="False" />
-            <SelectField field="TripMaxStops" selected="False" />
-            <SelectField field="IsMaxTrip" selected="False" />
-            <SelectField field="*Unknown" selected="True" />
-          </SelectFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
-    <Node ToolID="28">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
-        <Position x="1278" y="462" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <UniqueFields>
-            <Field field="trip_id" />
-            <Field field="stop_id" />
-            <Field field="stop_sequence" />
-            <Field field="route_id" />
-            <Field field="service_id" />
-            <Field field="stop_code" />
-            <Field field="stop_name" />
-            <Field field="route_long_name" />
-          </UniqueFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>Unique: trip_id, stop_id, stop_sequence, route_id, service_id, stop_code, stop_name, route_long_name</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
-    </Node>
-    <Node ToolID="29">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="1458" y="558" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <File MaxRecords="" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\TransitLongestRouteData.csv</File>
-          <Passwords />
-          <FormatSpecificOptions>
-            <LineEndStyle>CRLF</LineEndStyle>
-            <Delimeter>,</Delimeter>
-            <ForceQuotes>False</ForceQuotes>
-            <HeaderRow>True</HeaderRow>
-            <CodePage>28591</CodePage>
-          </FormatSpecificOptions>
-          <MultiFile value="False" />
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>TransitLongestRouteData.csv</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
@@ -873,7 +735,7 @@ ENDIF</Expression>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <File MaxRecords="" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\TransitFullRouteData.csv</File>
+          <File MaxRecords="" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\TransitFullRouteData.csv</File>
           <Passwords />
           <FormatSpecificOptions>
             <LineEndStyle>CRLF</LineEndStyle>
@@ -969,22 +831,6 @@ ENDIF</Expression>
     <Connection>
       <Origin ToolID="24" Connection="Join" />
       <Destination ToolID="25" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="26" Connection="True" />
-      <Destination ToolID="27" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="27" Connection="Output" />
-      <Destination ToolID="28" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="28" Connection="Unique" />
-      <Destination ToolID="21" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="28" Connection="Unique" />
-      <Destination ToolID="29" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="33" Connection="Output" />
