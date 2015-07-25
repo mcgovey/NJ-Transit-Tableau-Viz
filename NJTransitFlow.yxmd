@@ -175,11 +175,11 @@
     </Node>
     <Node ToolID="12">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1254" y="222" />
+        <Position x="1014" y="210" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_11636_a401e8c0bd8f440ebf05a49085c9a96d\Engine_3424_7156a3f26efb4f09a87b2aff1a9315ed.yxdb</TempFile>
+          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_6404_b0acecec9a794fc39cdf862196e79242\Engine_11436_53263d5f274f4e74911ab38a3952c00e.yxdb</TempFile>
           <Layout>
             <ViewMode>Single</ViewMode>
             <ViewSize value="100" />
@@ -244,7 +244,7 @@ LEFT(arrival_time,
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="1266" y="258" />
+        <Position x="1014" y="282" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -342,25 +342,6 @@ LEFT(arrival_time,
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
     </Node>
-    <Node ToolID="19">
-      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="786" y="234" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <SummarizeFields>
-            <SummarizeField field="route_id" action="GroupBy" rename="route_id" />
-            <SummarizeField field="stop_sequence" action="Max" rename="Max_stop_sequence" />
-          </SummarizeFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
-    </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
         <Position x="582" y="234" />
@@ -389,115 +370,6 @@ LEFT(arrival_time,
         </Annotation>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
-    </Node>
-    <Node ToolID="22">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="1074" y="186" />
-      </GuiSettings>
-      <Properties>
-        <Configuration joinByRecordPos="False">
-          <JoinInfo connection="Left">
-            <Field field="route_id" />
-            <Field field="trip_id" />
-          </JoinInfo>
-          <JoinInfo connection="Right">
-            <Field field="route_id" />
-            <Field field="trip_id" />
-          </JoinInfo>
-          <SelectConfiguration>
-            <Configuration outputConnection="Join">
-              <OrderChanged value="False" />
-              <SelectFields>
-                <SelectField field="Left_stop_lat" selected="True" size="2147483647" />
-                <SelectField field="Left_stop_lon" selected="True" size="2147483647" />
-                <SelectField field="Right_route_id" selected="False" rename="Right_route_id" />
-                <SelectField field="Right_Max_stop_sequence" selected="True" rename="RouteMaxStops" />
-                <SelectField field="Right_Right_route_id" selected="False" rename="Right_Right_route_id" />
-                <SelectField field="Right_Right_Max_stop_sequence" selected="True" rename="TripMaxStops" />
-                <SelectField field="Right_trip_id" selected="False" rename="Right_trip_id" />
-                <SelectField field="Left_Right_trip_id" selected="False" rename="Left_Right_trip_id" />
-                <SelectField field="Left_Right_route_id" selected="False" rename="Left_Right_route_id" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-          </SelectConfiguration>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
-    </Node>
-    <Node ToolID="23">
-      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="786" y="318" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <SummarizeFields>
-            <SummarizeField field="route_id" action="GroupBy" rename="route_id" />
-            <SummarizeField field="stop_sequence" action="Max" rename="Max_stop_sequence" />
-            <SummarizeField field="trip_id" action="GroupBy" rename="trip_id" />
-          </SummarizeFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
-    </Node>
-    <Node ToolID="24">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="882" y="282" />
-      </GuiSettings>
-      <Properties>
-        <Configuration joinByRecordPos="False">
-          <JoinInfo connection="Left">
-            <Field field="route_id" />
-          </JoinInfo>
-          <JoinInfo connection="Right">
-            <Field field="route_id" />
-          </JoinInfo>
-          <SelectConfiguration>
-            <Configuration outputConnection="Join">
-              <OrderChanged value="False" />
-              <SelectFields>
-                <SelectField field="Right_route_id" selected="True" rename="Right_route_id" />
-                <SelectField field="Right_Max_stop_sequence" selected="True" rename="Right_Max_stop_sequence" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-          </SelectConfiguration>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
-    </Node>
-    <Node ToolID="25">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="966" y="282" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <FormulaFields>
-            <FormulaField field="IsMaxTrip" type="Double" size="8" expression="IF [Max_stop_sequence]=[Right_Max_stop_sequence] then&#xA;1&#xA;else&#xA;0&#xA;Endif" />
-          </FormulaFields>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText>IsMaxTrip=IF [Max_stop_sequence]=[Right_Max_stop_sequence] th...</DefaultAnnotationText>
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
@@ -546,7 +418,7 @@ LEFT(arrival_time,
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_11636_a401e8c0bd8f440ebf05a49085c9a96d\Engine_3424_3dda11d8dff5484faab86acb76c7f2fd.yxdb</TempFile>
+          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_6404_b0acecec9a794fc39cdf862196e79242\Engine_11436_f08689e99f1046ed92fa5c6f9cb60726.yxdb</TempFile>
           <Layout>
             <ViewMode>Single</ViewMode>
             <ViewSize value="100" />
@@ -786,51 +658,23 @@ ENDIF</Expression>
     </Connection>
     <Connection>
       <Origin ToolID="15" Connection="Output" />
-      <Destination ToolID="22" Connection="Left" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="25" Connection="Output" />
-      <Destination ToolID="22" Connection="Right" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="15" Connection="Output" />
-      <Destination ToolID="19" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="15" Connection="Output" />
-      <Destination ToolID="23" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="15" Connection="Output" />
       <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="18" Connection="Join" />
       <Destination ToolID="14" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="19" Connection="Output" />
-      <Destination ToolID="24" Connection="Left" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="23" Connection="Output" />
-      <Destination ToolID="24" Connection="Right" />
-    </Connection>
-    <Connection>
       <Origin ToolID="20" Connection="Output" />
       <Destination ToolID="15" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="22" Connection="Join" />
-      <Destination ToolID="16" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="22" Connection="Join" />
-      <Destination ToolID="12" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="24" Connection="Join" />
-      <Destination ToolID="25" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="33" Connection="Output" />
