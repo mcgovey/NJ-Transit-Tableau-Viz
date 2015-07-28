@@ -210,6 +210,7 @@ stop_sequence - Ascending</DefaultAnnotationText>
           <FormulaFields>
             <FormulaField field="ArrivalHour" type="Double" size="8" expression="ToNumber(&#xA;LEFT(arrival_time,&#xA;	FindString(arrival_time, &quot;:&quot;)&#xA;)&#xA;)" />
             <FormulaField field="ArrivalTimeDec" type="Double" size="8" expression="ToNumber(&#xA;LEFT(arrival_time,&#xA;	FindString(arrival_time, &quot;:&quot;)&#xA;)&#xA;)+&#xA;(TONUMBER(SUBSTRING(arrival_time,3,2))/60)" />
+            <FormulaField field="ArrivalMinute" type="Double" size="8" expression="(TONUMBER(SUBSTRING(arrival_time,3,2)))" />
           </FormulaFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -219,7 +220,8 @@ LEFT(arrival_time,
 	FindString(arrival_...
 ArrivalTimeDec=ToNumber(
 LEFT(arrival_time,
-	FindString(arriv...</DefaultAnnotationText>
+	FindString(arriv...
+ArrivalMinute=(TONUMBER(SUBSTRING(arrival_time,3,2)))</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
       </Properties>
@@ -405,7 +407,7 @@ LEFT(arrival_time,
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_5756_2af34004c4754bf08b66a5d0e43f0e1b\Engine_9240_b2d358c34f2d4b668e55f459d223ccf7.yxdb</TempFile>
+          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_9220_9a4914a7de454b6f9ecc57ca64cbd533\Engine_9240_67ef310540aa417689fd20d06cece99a.yxdb</TempFile>
           <Layout>
             <ViewMode>Single</ViewMode>
             <ViewSize value="100" />
@@ -802,7 +804,7 @@ TimeBetweenStations=[DestStopTime]-[OriginStopTime]</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_5756_2af34004c4754bf08b66a5d0e43f0e1b\Engine_9240_485d037afd7f4fe88e3608c0744ff954.yxdb</TempFile>
+          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_9220_9a4914a7de454b6f9ecc57ca64cbd533\Engine_9240_c4c7e3ed33b245e89cc913eb33be2de5.yxdb</TempFile>
           <Layout>
             <ViewMode>Single</ViewMode>
             <ViewSize value="100" />
@@ -1036,9 +1038,9 @@ AND
               <SelectFields>
                 <SelectField field="Right_trip_id" selected="False" rename="Right_trip_id" />
                 <SelectField field="Right_route_id" selected="False" rename="Right_route_id" />
-                <SelectField field="Right_Right_OriginStopName" selected="True" rename="Right_Right_OriginStopName" />
-                <SelectField field="Right_Right_DestStopName" selected="True" rename="Right_Right_DestStopName" />
-                <SelectField field="Right_StopRecordID" selected="True" rename="Right_StopRecordID" />
+                <SelectField field="Right_Right_OriginStopName" selected="False" rename="Right_Right_OriginStopName" />
+                <SelectField field="Right_Right_DestStopName" selected="False" rename="Right_Right_DestStopName" />
+                <SelectField field="Right_StopRecordID" selected="False" rename="Right_StopRecordID" />
                 <SelectField field="*Unknown" selected="True" />
               </SelectFields>
             </Configuration>
@@ -1073,7 +1075,6 @@ AND
             <SelectField field="parent_station" selected="False" />
             <SelectField field="stop_timezone" selected="False" />
             <SelectField field="route_url" selected="False" />
-            <SelectField field="ArrivalHour" selected="False" />
             <SelectField field="Right_stop_name" selected="False" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
