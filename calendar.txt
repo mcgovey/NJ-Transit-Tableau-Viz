@@ -1,4 +1,0 @@
-service_id,service_name,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date
-1602A2876,Starting April 26th 2015 (Mon-Fri),1,1,1,1,1,0,0,20150426,20160101
-1603A2876,Starting April 26th 2015 (Sat),0,0,0,0,0,1,0,20150426,20160101
-1604A2876,Starting April 26th 2015 (Sun),0,0,0,0,0,0,1,20150426,20160101

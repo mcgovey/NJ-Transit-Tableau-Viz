@@ -1,2 +1,0 @@
-﻿feed_id,feed_publisher_name,feed_publisher_url,feed_lang,feed_version,feed_license
-path-nj-us,"Trillium Solutions, Inc.",http://www.trilliumtransit.com,en,USA-Pacific: 18-Jun-2015 15:01,
