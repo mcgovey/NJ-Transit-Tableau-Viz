@@ -7,224 +7,224 @@ TransitID,stop_name,direction_id,SequenceOrderFinal
 3,33rd Street,1,5.73963e-002
 4,9th Street,1,0.0001
 4,14th Street,1,1.676667e-002
-7,Christopher Street,1,0.0001
-7,9th Street,1,3.343333e-002
-7,14th Street,1,0.0501
-8,Grove Street,1,0.0001
-8,Newport,1,6.676666e-002
-8,Hoboken,1,0.1001
-8,Christopher Street,1,0.240256
-8,9th Street,1,0.2735893
-8,14th Street,1,0.2902559
-9,Hoboken,1,0.0001
-9,Christopher Street,1,0.1553017
-9,9th Street,1,0.188635
-9,14th Street,1,0.2053017
-10,Journal Square,1,0.0001
-10,Grove Street,1,6.676666e-002
-10,Newport,1,0.1334333
-10,Hoboken,1,0.1667667
-10,Christopher Street,1,0.3069226
-10,9th Street,1,0.3402559
-10,14th Street,1,0.3569226
-11,Newport,1,0.0001
-11,Hoboken,1,3.343333e-002
-11,Christopher Street,1,0.1735893
-11,9th Street,1,0.2069226
-11,14th Street,1,0.2235893
-13,23rd Street,1,0.0001
-14,23rd Street,1,0.0001
-14,33rd Street,1,4.072963e-002
-15,9th Street,1,0.0001
-15,14th Street,1,1.676667e-002
-15,23rd Street,1,3.343333e-002
-18,Christopher Street,1,0.0001
-18,9th Street,1,3.343333e-002
-18,14th Street,1,0.0501
-18,23rd Street,1,6.676666e-002
-19,Grove Street,1,0.0001
-19,Newport,1,6.676666e-002
-19,Hoboken,1,0.1001
-19,Christopher Street,1,0.240256
-19,9th Street,1,0.2735893
-19,14th Street,1,0.2902559
-19,23rd Street,1,0.3069226
-20,Hoboken,1,0.0001
-20,Christopher Street,1,0.1553017
-20,9th Street,1,0.188635
-20,14th Street,1,0.2053017
-20,23rd Street,1,0.2219684
-21,Journal Square,1,0.0001
-21,Grove Street,1,6.676666e-002
-21,Newport,1,0.1334333
-21,Hoboken,1,0.1667667
-21,Christopher Street,1,0.3069226
-21,9th Street,1,0.3402559
-21,14th Street,1,0.3569226
-21,23rd Street,1,0.3735893
-22,Newport,1,0.0001
-22,Hoboken,1,3.343333e-002
-22,Christopher Street,1,0.1735893
-22,9th Street,1,0.2069226
-22,14th Street,1,0.2235893
-22,23rd Street,1,0.240256
-25,33rd Street,1,0.0001
-26,9th Street,1,0.0001
-26,14th Street,1,1.676667e-002
-26,23rd Street,1,3.343333e-002
-26,33rd Street,1,7.406297e-002
-29,Christopher Street,1,0.0001
-29,9th Street,1,3.343333e-002
-29,14th Street,1,0.0501
-29,23rd Street,1,6.676666e-002
-29,33rd Street,1,0.1073963
-30,Grove Street,1,0.0001
-30,Newport,1,6.676666e-002
-30,Hoboken,1,0.1001
-30,Christopher Street,1,0.240256
-30,9th Street,1,0.2735893
-30,14th Street,1,0.2902559
-30,23rd Street,1,0.3069226
-30,33rd Street,1,0.3498563
-31,Hoboken,1,0.0001
-31,Christopher Street,1,0.1553017
-31,9th Street,1,0.188635
-31,14th Street,1,0.2053017
-31,23rd Street,1,0.2219684
-31,33rd Street,1,0.2657582
-32,Journal Square,1,0.0001
-32,Grove Street,1,6.676666e-002
-32,Newport,1,0.1334333
-32,Hoboken,1,0.1667667
-32,Christopher Street,1,0.3069226
-32,9th Street,1,0.3402559
-32,14th Street,1,0.3569226
-32,23rd Street,1,0.3735893
-32,33rd Street,1,0.416523
-33,Newport,1,0.0001
-33,Hoboken,1,3.343333e-002
-33,Christopher Street,1,0.1735893
-33,9th Street,1,0.2069226
-33,14th Street,1,0.2235893
-33,23rd Street,1,0.240256
-33,33rd Street,1,0.2831897
-37,9th Street,1,0.0001
-40,Christopher Street,1,0.0001
-40,9th Street,1,3.343333e-002
-41,Grove Street,1,0.0001
-41,Newport,1,6.676666e-002
-41,Hoboken,1,0.1001
-41,Christopher Street,1,0.240256
-41,9th Street,1,0.2735893
-42,Hoboken,1,0.0001
-42,Christopher Street,1,0.1553017
-42,9th Street,1,0.188635
-43,Journal Square,1,0.0001
-43,Grove Street,1,6.676666e-002
-43,Newport,1,0.1334333
-43,Hoboken,1,0.1667667
-43,Christopher Street,1,0.3069226
-43,9th Street,1,0.3402559
-44,Newport,1,0.0001
-44,Hoboken,1,3.343333e-002
-44,Christopher Street,1,0.1735893
-44,9th Street,1,0.2069226
-51,Christopher Street,1,0.0001
-52,Grove Street,1,0.0001
-52,Newport,1,6.676666e-002
-52,Hoboken,1,0.1001
-52,Christopher Street,1,0.240256
-53,Hoboken,1,0.0001
-53,Christopher Street,1,0.1553017
-54,Journal Square,1,0.0001
-54,Grove Street,1,6.676666e-002
-54,Newport,1,0.1334333
-54,Hoboken,1,0.1667667
-54,Christopher Street,1,0.3069226
-55,Newport,1,0.0001
-55,Hoboken,1,3.343333e-002
-55,Christopher Street,1,0.1735893
-58,Exchange Place,1,0.0001
-59,Grove Street,1,0.0001
-59,Exchange Place,1,0.0501
-60,Harrison,1,0.0001
-60,Journal Square,1,0.1501
-60,Grove Street,1,0.2167667
-60,Exchange Place,1,0.2667667
-61,Hoboken,1,0.0001
-61,Newport,1,0.0501
-61,Exchange Place,1,0.1001
-62,Journal Square,1,0.0001
-62,Grove Street,1,6.676666e-002
-62,Exchange Place,1,0.1167667
-63,Newark,1,0.0001
-63,Harrison,1,3.343333e-002
-63,Journal Square,1,0.1834333
-63,Grove Street,1,0.2501
-63,Exchange Place,1,0.3001
-64,Newport,1,0.0001
-64,Exchange Place,1,0.0501
-65,Exchange Place,1,0.0001
-65,World Trade Center,1,7.427337e-002
-74,Grove Street,1,0.0001
-75,Harrison,1,0.0001
-75,Journal Square,1,0.1501
-75,Grove Street,1,0.2167667
-76,Grove Street,1,0.0001
-76,Newport,1,6.676666e-002
-76,Hoboken,1,0.1001
-77,Journal Square,1,0.0001
-77,Grove Street,1,6.676666e-002
-78,Newark,1,0.0001
-78,Harrison,1,3.343333e-002
-78,Journal Square,1,0.1834333
-78,Grove Street,1,0.2501
-79,Grove Street,1,0.0001
-79,Newport,1,6.676666e-002
-80,Grove Street,1,0.0001
-80,Exchange Place,1,0.0501
-80,World Trade Center,1,0.1272536
-85,Harrison,1,0.0001
-86,Harrison,1,0.0001
-86,Journal Square,1,0.1501
-87,Newark,1,0.0001
-87,Harrison,1,3.343333e-002
-88,Harrison,1,0.0001
-88,Journal Square,1,0.1501
-88,Grove Street,1,0.2167667
-88,Exchange Place,1,0.2667667
-88,World Trade Center,1,0.3439202
-98,Hoboken,1,0.0001
-99,Journal Square,1,0.0001
-99,Grove Street,1,6.676666e-002
-99,Newport,1,0.1334333
-99,Hoboken,1,0.1667667
-100,Newport,1,1.708718e-002
-100,Hoboken,1,2.210855e-002
-101,Hoboken,1,0.0001
-101,Newport,1,0.0501
-101,Exchange Place,1,0.1001
-101,World Trade Center,1,0.1667667
-113,Journal Square,1,0.0001
-114,Newark,1,0.0001
-114,Harrison,1,3.343333e-002
-114,Journal Square,1,0.1834333
-115,Journal Square,1,0.0001
-115,Grove Street,1,6.676666e-002
-115,Newport,1,0.1334333
-116,Journal Square,1,0.0001
-116,Grove Street,1,6.676666e-002
-116,Exchange Place,1,0.1167667
-116,World Trade Center,1,0.1939202
-123,Newark,1,0.0001
-124,Newark,1,0.0001
-124,Harrison,1,3.343333e-002
-124,Journal Square,1,0.1834333
-124,Grove Street,1,0.2501
-124,Exchange Place,1,0.3001
-124,World Trade Center,1,0.3772536
-136,Newport,1,0.0001
-137,Newport,1,0.0001
-137,Exchange Place,1,0.0501
-137,World Trade Center,1,0.1167667
-147,World Trade Center,1,0.0001
+5,Christopher Street,1,0.0001
+5,9th Street,1,3.343333e-002
+5,14th Street,1,0.0501
+6,Grove Street,1,0.0001
+6,Newport,1,6.676666e-002
+6,Hoboken,1,0.1001
+6,Christopher Street,1,0.240256
+6,9th Street,1,0.2735893
+6,14th Street,1,0.2902559
+7,Hoboken,1,0.0001
+7,Christopher Street,1,0.1553017
+7,9th Street,1,0.188635
+7,14th Street,1,0.2053017
+8,Journal Square,1,0.0001
+8,Grove Street,1,6.676666e-002
+8,Newport,1,0.1334333
+8,Hoboken,1,0.1667667
+8,Christopher Street,1,0.3069226
+8,9th Street,1,0.3402559
+8,14th Street,1,0.3569226
+9,Newport,1,0.0001
+9,Hoboken,1,3.343333e-002
+9,Christopher Street,1,0.1735893
+9,9th Street,1,0.2069226
+9,14th Street,1,0.2235893
+11,23rd Street,1,0.0001
+12,23rd Street,1,0.0001
+12,33rd Street,1,4.072963e-002
+13,9th Street,1,0.0001
+13,14th Street,1,1.676667e-002
+13,23rd Street,1,3.343333e-002
+14,Christopher Street,1,0.0001
+14,9th Street,1,3.343333e-002
+14,14th Street,1,0.0501
+14,23rd Street,1,6.676666e-002
+15,Grove Street,1,0.0001
+15,Newport,1,6.676666e-002
+15,Hoboken,1,0.1001
+15,Christopher Street,1,0.240256
+15,9th Street,1,0.2735893
+15,14th Street,1,0.2902559
+15,23rd Street,1,0.3069226
+16,Hoboken,1,0.0001
+16,Christopher Street,1,0.1553017
+16,9th Street,1,0.188635
+16,14th Street,1,0.2053017
+16,23rd Street,1,0.2219684
+17,Journal Square,1,0.0001
+17,Grove Street,1,6.676666e-002
+17,Newport,1,0.1334333
+17,Hoboken,1,0.1667667
+17,Christopher Street,1,0.3069226
+17,9th Street,1,0.3402559
+17,14th Street,1,0.3569226
+17,23rd Street,1,0.3735893
+18,Newport,1,0.0001
+18,Hoboken,1,3.343333e-002
+18,Christopher Street,1,0.1735893
+18,9th Street,1,0.2069226
+18,14th Street,1,0.2235893
+18,23rd Street,1,0.240256
+21,33rd Street,1,0.0001
+22,9th Street,1,0.0001
+22,14th Street,1,1.676667e-002
+22,23rd Street,1,3.343333e-002
+22,33rd Street,1,7.406297e-002
+23,Christopher Street,1,0.0001
+23,9th Street,1,3.343333e-002
+23,14th Street,1,0.0501
+23,23rd Street,1,6.676666e-002
+23,33rd Street,1,0.1073963
+24,Grove Street,1,0.0001
+24,Newport,1,6.676666e-002
+24,Hoboken,1,0.1001
+24,Christopher Street,1,0.240256
+24,9th Street,1,0.2735893
+24,14th Street,1,0.2902559
+24,23rd Street,1,0.3069226
+24,33rd Street,1,0.3498563
+25,Hoboken,1,0.0001
+25,Christopher Street,1,0.1553017
+25,9th Street,1,0.188635
+25,14th Street,1,0.2053017
+25,23rd Street,1,0.2219684
+25,33rd Street,1,0.2657582
+26,Journal Square,1,0.0001
+26,Grove Street,1,6.676666e-002
+26,Newport,1,0.1334333
+26,Hoboken,1,0.1667667
+26,Christopher Street,1,0.3069226
+26,9th Street,1,0.3402559
+26,14th Street,1,0.3569226
+26,23rd Street,1,0.3735893
+26,33rd Street,1,0.416523
+27,Newport,1,0.0001
+27,Hoboken,1,3.343333e-002
+27,Christopher Street,1,0.1735893
+27,9th Street,1,0.2069226
+27,14th Street,1,0.2235893
+27,23rd Street,1,0.240256
+27,33rd Street,1,0.2831897
+31,9th Street,1,0.0001
+32,Christopher Street,1,0.0001
+32,9th Street,1,3.343333e-002
+33,Grove Street,1,0.0001
+33,Newport,1,6.676666e-002
+33,Hoboken,1,0.1001
+33,Christopher Street,1,0.240256
+33,9th Street,1,0.2735893
+34,Hoboken,1,0.0001
+34,Christopher Street,1,0.1553017
+34,9th Street,1,0.188635
+35,Journal Square,1,0.0001
+35,Grove Street,1,6.676666e-002
+35,Newport,1,0.1334333
+35,Hoboken,1,0.1667667
+35,Christopher Street,1,0.3069226
+35,9th Street,1,0.3402559
+36,Newport,1,0.0001
+36,Hoboken,1,3.343333e-002
+36,Christopher Street,1,0.1735893
+36,9th Street,1,0.2069226
+41,Christopher Street,1,0.0001
+42,Grove Street,1,0.0001
+42,Newport,1,6.676666e-002
+42,Hoboken,1,0.1001
+42,Christopher Street,1,0.240256
+43,Hoboken,1,0.0001
+43,Christopher Street,1,0.1553017
+44,Journal Square,1,0.0001
+44,Grove Street,1,6.676666e-002
+44,Newport,1,0.1334333
+44,Hoboken,1,0.1667667
+44,Christopher Street,1,0.3069226
+45,Newport,1,0.0001
+45,Hoboken,1,3.343333e-002
+45,Christopher Street,1,0.1735893
+46,Exchange Place,1,0.0001
+47,Grove Street,1,0.0001
+47,Exchange Place,1,0.0501
+48,Harrison,1,0.0001
+48,Journal Square,1,0.1501
+48,Grove Street,1,0.2167667
+48,Exchange Place,1,0.2667667
+49,Hoboken,1,0.0001
+49,Newport,1,0.0501
+49,Exchange Place,1,0.1001
+50,Journal Square,1,0.0001
+50,Grove Street,1,6.676666e-002
+50,Exchange Place,1,0.1167667
+51,Newark,1,0.0001
+51,Harrison,1,3.343333e-002
+51,Journal Square,1,0.1834333
+51,Grove Street,1,0.2501
+51,Exchange Place,1,0.3001
+52,Newport,1,0.0001
+52,Exchange Place,1,0.0501
+53,Exchange Place,1,0.0001
+53,World Trade Center,1,7.427337e-002
+60,Grove Street,1,0.0001
+61,Harrison,1,0.0001
+61,Journal Square,1,0.1501
+61,Grove Street,1,0.2167667
+62,Grove Street,1,0.0001
+62,Newport,1,6.676666e-002
+62,Hoboken,1,0.1001
+63,Journal Square,1,0.0001
+63,Grove Street,1,6.676666e-002
+64,Newark,1,0.0001
+64,Harrison,1,3.343333e-002
+64,Journal Square,1,0.1834333
+64,Grove Street,1,0.2501
+65,Grove Street,1,0.0001
+65,Newport,1,6.676666e-002
+66,Grove Street,1,0.0001
+66,Exchange Place,1,0.0501
+66,World Trade Center,1,0.1272536
+69,Harrison,1,0.0001
+70,Harrison,1,0.0001
+70,Journal Square,1,0.1501
+71,Newark,1,0.0001
+71,Harrison,1,3.343333e-002
+72,Harrison,1,0.0001
+72,Journal Square,1,0.1501
+72,Grove Street,1,0.2167667
+72,Exchange Place,1,0.2667667
+72,World Trade Center,1,0.3439202
+80,Hoboken,1,0.0001
+81,Journal Square,1,0.0001
+81,Grove Street,1,6.676666e-002
+81,Newport,1,0.1334333
+81,Hoboken,1,0.1667667
+82,Newport,1,1.708718e-002
+82,Hoboken,1,2.210855e-002
+83,Hoboken,1,0.0001
+83,Newport,1,0.0501
+83,Exchange Place,1,0.1001
+83,World Trade Center,1,0.1667667
+93,Journal Square,1,0.0001
+94,Newark,1,0.0001
+94,Harrison,1,3.343333e-002
+94,Journal Square,1,0.1834333
+95,Journal Square,1,0.0001
+95,Grove Street,1,6.676666e-002
+95,Newport,1,0.1334333
+96,Journal Square,1,0.0001
+96,Grove Street,1,6.676666e-002
+96,Exchange Place,1,0.1167667
+96,World Trade Center,1,0.1939202
+101,Newark,1,0.0001
+102,Newark,1,0.0001
+102,Harrison,1,3.343333e-002
+102,Journal Square,1,0.1834333
+102,Grove Street,1,0.2501
+102,Exchange Place,1,0.3001
+102,World Trade Center,1,0.3772536
+112,Newport,1,0.0001
+113,Newport,1,0.0001
+113,Exchange Place,1,0.0501
+113,World Trade Center,1,0.1167667
+121,World Trade Center,1,0.0001
