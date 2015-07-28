@@ -3,7 +3,7 @@
   <Nodes>
     <Node ToolID="1">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="102" />
+        <Position x="18" y="18" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -42,7 +42,7 @@
     </Node>
     <Node ToolID="2">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="54" y="246" />
+        <Position x="18" y="102" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -81,7 +81,7 @@
     </Node>
     <Node ToolID="3">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="162" y="294" />
+        <Position x="126" y="150" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -123,7 +123,7 @@
     </Node>
     <Node ToolID="5">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="174" y="174" />
+        <Position x="138" y="30" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -153,7 +153,7 @@
     </Node>
     <Node ToolID="6">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="294" y="222" />
+        <Position x="258" y="78" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -181,34 +181,9 @@
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
     </Node>
-    <Node ToolID="12">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1734" y="414" />
-      </GuiSettings>
-      <Properties>
-        <Configuration>
-          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_8724_c719f200b98b46c493b178c0e363c2f2\Engine_9240_c3d3839c46db436da4cbf9531df819ea.yxdb</TempFile>
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Table</DefaultTab>
-              <Hints />
-            </View1>
-            <View2 />
-          </Layout>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
-    </Node>
     <Node ToolID="14">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="486" y="234" />
+        <Position x="450" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -228,7 +203,7 @@ stop_sequence - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="15">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="678" y="234" />
+        <Position x="642" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -252,7 +227,7 @@ LEFT(arrival_time,
     </Node>
     <Node ToolID="16">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="1014" y="282" />
+        <Position x="2922" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -277,7 +252,7 @@ LEFT(arrival_time,
     </Node>
     <Node ToolID="17">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
-        <Position x="270" y="330" />
+        <Position x="234" y="186" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -316,7 +291,7 @@ LEFT(arrival_time,
     </Node>
     <Node ToolID="18">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="402" y="234" />
+        <Position x="366" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
@@ -354,7 +329,7 @@ LEFT(arrival_time,
     </Node>
     <Node ToolID="20">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="582" y="234" />
+        <Position x="546" y="90" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -383,14 +358,15 @@ LEFT(arrival_time,
     </Node>
     <Node ToolID="33">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="870" y="114" />
+        <Position x="2106" y="486" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <SummarizeFields>
-            <SummarizeField field="route_id" action="GroupBy" rename="route_id" />
+            <SummarizeField field="TransitID" action="GroupBy" rename="TransitID" />
             <SummarizeField field="trip_id" action="GroupBy" rename="trip_id" />
             <SummarizeField field="stop_name" action="GroupBy" rename="stop_name" />
+            <SummarizeField field="direction_id" action="GroupBy" rename="direction_id" />
             <SummarizeField field="ArrivalTimeDec" action="Min" rename="StopArrivalTime_ByTrip" />
           </SummarizeFields>
         </Configuration>
@@ -404,13 +380,14 @@ LEFT(arrival_time,
     </Node>
     <Node ToolID="34">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="870" y="54" />
+        <Position x="2106" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <SummarizeFields>
-            <SummarizeField field="route_id" action="GroupBy" rename="route_id" />
+            <SummarizeField field="TransitID" action="GroupBy" rename="TransitID" />
             <SummarizeField field="trip_id" action="GroupBy" rename="trip_id" />
+            <SummarizeField field="direction_id" action="GroupBy" rename="direction_id" />
             <SummarizeField field="ArrivalTimeDec" action="Min" rename="TripStartTime" />
           </SummarizeFields>
         </Configuration>
@@ -424,11 +401,11 @@ LEFT(arrival_time,
     </Node>
     <Node ToolID="35">
       <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1710" y="78" />
+        <Position x="2946" y="426" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_8724_c719f200b98b46c493b178c0e363c2f2\Engine_9240_b197ce3c61d74ae88a7a0ac719447026.yxdb</TempFile>
+          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_5756_2af34004c4754bf08b66a5d0e43f0e1b\Engine_9240_b2d358c34f2d4b668e55f459d223ccf7.yxdb</TempFile>
           <Layout>
             <ViewMode>Single</ViewMode>
             <ViewSize value="100" />
@@ -449,24 +426,28 @@ LEFT(arrival_time,
     </Node>
     <Node ToolID="37">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="1002" y="78" />
+        <Position x="2238" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration joinByRecordPos="False">
           <JoinInfo connection="Left">
-            <Field field="route_id" />
+            <Field field="TransitID" />
             <Field field="trip_id" />
+            <Field field="direction_id" />
           </JoinInfo>
           <JoinInfo connection="Right">
-            <Field field="route_id" />
+            <Field field="TransitID" />
             <Field field="trip_id" />
+            <Field field="direction_id" />
           </JoinInfo>
           <SelectConfiguration>
             <Configuration outputConnection="Join">
               <OrderChanged value="False" />
               <SelectFields>
-                <SelectField field="Right_route_id" selected="False" rename="Right_route_id" />
+                <SelectField field="Right_TransitID" selected="True" rename="Right_TransitID" />
                 <SelectField field="Right_trip_id" selected="False" rename="Right_trip_id" />
+                <SelectField field="Right_direction_id" selected="False" rename="Right_direction_id" />
+                <SelectField field="Right_route_id" selected="False" rename="Right_route_id" />
                 <SelectField field="*Unknown" selected="True" />
               </SelectFields>
             </Configuration>
@@ -482,7 +463,7 @@ LEFT(arrival_time,
     </Node>
     <Node ToolID="38">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1086" y="78" />
+        <Position x="2322" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -500,13 +481,14 @@ LEFT(arrival_time,
     </Node>
     <Node ToolID="39">
       <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
-        <Position x="1182" y="78" />
+        <Position x="2418" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <SummarizeFields>
-            <SummarizeField field="route_id" action="GroupBy" rename="route_id" />
+            <SummarizeField field="TransitID" action="GroupBy" rename="TransitID" />
             <SummarizeField field="stop_name" action="GroupBy" rename="stop_name" />
+            <SummarizeField field="direction_id" action="GroupBy" rename="direction_id" />
             <SummarizeField field="TimeToDest" action="Avg" rename="Avg_TimeToDest" />
           </SummarizeFields>
         </Configuration>
@@ -520,18 +502,20 @@ LEFT(arrival_time,
     </Node>
     <Node ToolID="40">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
-        <Position x="1278" y="78" />
+        <Position x="2514" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <SortInfo locale="0">
-            <Field field="route_id" order="Ascending" />
+            <Field field="TransitID" order="Ascending" />
+            <Field field="direction_id" order="Ascending" />
             <Field field="Avg_TimeToDest" order="Ascending" />
           </SortInfo>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
-          <DefaultAnnotationText>route_id - Ascending
+          <DefaultAnnotationText>TransitID - Ascending
+direction_id - Ascending
 Avg_TimeToDest - Ascending</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
@@ -540,7 +524,7 @@ Avg_TimeToDest - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="41">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
-        <Position x="774" y="126" />
+        <Position x="2010" y="498" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -563,7 +547,7 @@ Avg_TimeToDest - Ascending</DefaultAnnotationText>
     </Node>
     <Node ToolID="43">
       <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
-        <Position x="1470" y="78" />
+        <Position x="2706" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -581,7 +565,8 @@ ELSE
 [SequenceOrder]
 ENDIF</Expression>
           <GroupByFields>
-            <Field field="route_id" />
+            <Field field="TransitID" />
+            <Field field="direction_id" />
           </GroupByFields>
         </Configuration>
         <Annotation DisplayMode="0">
@@ -595,7 +580,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="46">
       <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
-        <Position x="1374" y="78" />
+        <Position x="2610" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -613,7 +598,7 @@ ENDIF</Expression>
     </Node>
     <Node ToolID="47">
       <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
-        <Position x="1710" y="126" />
+        <Position x="2946" y="486" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -636,36 +621,9 @@ ENDIF</Expression>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
     </Node>
-    <Node ToolID="62">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
-        <Position x="1554" y="414" />
-      </GuiSettings>
-      <Properties>
-        <Configuration joinByRecordPos="False">
-          <JoinInfo connection="Left" />
-          <JoinInfo connection="Right" />
-          <SelectConfiguration>
-            <Configuration outputConnection="Join">
-              <OrderChanged value="False" />
-              <SelectFields>
-                <SelectField field="Right_route_id" selected="True" rename="Right_route_id" />
-                <SelectField field="Right_stop_name" selected="True" rename="Right_stop_name" />
-                <SelectField field="*Unknown" selected="True" />
-              </SelectFields>
-            </Configuration>
-          </SelectConfiguration>
-        </Configuration>
-        <Annotation DisplayMode="0">
-          <Name />
-          <DefaultAnnotationText />
-          <Left value="False" />
-        </Annotation>
-      </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
-    </Node>
     <Node ToolID="63">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="1566" y="78" />
+        <Position x="2802" y="450" />
       </GuiSettings>
       <Properties>
         <Configuration>
@@ -684,16 +642,16 @@ ENDIF</Expression>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="64">
+    <Node ToolID="79">
       <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
-        <Position x="918" y="486" />
+        <Position x="1266" y="186" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <GroupFields>
             <Field field="trip_id" />
             <Field field="route_id" />
-            <Field field="direction_id" />
+            <Field field="stop_name" />
           </GroupFields>
           <HeaderField field="stop_name" />
           <DataField field="ArrivalTimeDec" />
@@ -710,7 +668,7 @@ ENDIF</Expression>
           <RecordInfo>
             <Field name="trip_id" source="CrossTab:Group:Avg:" type="Int64" />
             <Field name="route_id" source="CrossTab:Group:Avg:" type="Int64" />
-            <Field name="direction_id" source="CrossTab:Group:Avg:" type="Int16" />
+            <Field name="stop_name" size="254" source="CrossTab:Group:Avg:" type="V_WString" />
             <Field name="Avg_9th_Street" source="CrossTab:Header:stop_name:9th Street:Avg:" type="Double" />
             <Field name="Avg_14th_Street" source="CrossTab:Header:stop_name:14th Street:Avg:" type="Double" />
             <Field name="Avg_23rd_Street" source="CrossTab:Header:stop_name:23rd Street:Avg:" type="Double" />
@@ -728,52 +686,66 @@ ENDIF</Expression>
           <SortInfo>
             <Field field="trip_id" order="Asc" />
             <Field field="route_id" order="Asc" />
-            <Field field="direction_id" order="Asc" />
+            <Field field="stop_name" order="Asc" />
           </SortInfo>
         </MetaInfo>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
     </Node>
-    <Node ToolID="65">
+    <Node ToolID="81">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="1458" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="trip_id" />
+            <Field field="route_id" />
+            <Field field="stop_name" />
+            <Field field="ArrivalTimeDec" />
+          </KeyFields>
+          <DataFields>
+            <Field field="trip_id" selected="False" />
+            <Field field="route_id" selected="False" />
+            <Field field="stop_name" selected="False" />
+            <Field field="ArrivalTimeDec" selected="False" />
+            <Field field="Avg_9th_Street" selected="True" />
+            <Field field="Avg_14th_Street" selected="True" />
+            <Field field="Avg_23rd_Street" selected="True" />
+            <Field field="Avg_33rd_Street" selected="True" />
+            <Field field="Avg_Christopher_Street" selected="True" />
+            <Field field="Avg_Exchange_Place" selected="True" />
+            <Field field="Avg_Grove_Street" selected="True" />
+            <Field field="Avg_Harrison" selected="True" />
+            <Field field="Avg_Hoboken" selected="True" />
+            <Field field="Avg_Journal_Square" selected="True" />
+            <Field field="Avg_Newark" selected="True" />
+            <Field field="Avg_Newport" selected="True" />
+            <Field field="Avg_World_Trade_Center" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="82">
       <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
-        <Position x="774" y="462" />
+        <Position x="1554" y="174" />
       </GuiSettings>
       <Properties>
         <Configuration>
           <OrderChanged value="False" />
           <SelectFields>
-            <SelectField field="arrival_time" selected="False" />
-            <SelectField field="departure_time" selected="False" />
-            <SelectField field="stop_id" selected="False" />
-            <SelectField field="stop_headsign" selected="False" />
-            <SelectField field="pickup_type" selected="False" />
-            <SelectField field="drop_off_type" selected="False" />
-            <SelectField field="shape_dist_traveled" selected="False" />
-            <SelectField field="service_id" selected="False" />
-            <SelectField field="trip_short_name" selected="False" />
-            <SelectField field="trip_headsign" selected="False" />
-            <SelectField field="block_id" selected="False" />
-            <SelectField field="shape_id" selected="False" />
-            <SelectField field="bikes_allowed" selected="False" />
-            <SelectField field="stop_code" selected="False" />
-            <SelectField field="platform_code" selected="False" />
-            <SelectField field="stop_desc" selected="False" />
-            <SelectField field="stop_lat" selected="False" />
-            <SelectField field="stop_lon" selected="False" />
-            <SelectField field="zone_id" selected="False" />
-            <SelectField field="stop_url" selected="False" />
-            <SelectField field="location_type" selected="False" />
-            <SelectField field="parent_station" selected="False" />
-            <SelectField field="stop_timezone" selected="False" />
-            <SelectField field="agency_id" selected="False" />
-            <SelectField field="route_short_name" selected="False" />
-            <SelectField field="route_long_name" selected="False" />
-            <SelectField field="route_desc" selected="False" />
-            <SelectField field="route_type" selected="False" />
-            <SelectField field="route_url" selected="False" />
-            <SelectField field="route_color" selected="False" />
-            <SelectField field="route_text_color" selected="False" />
-            <SelectField field="ArrivalHour" selected="False" />
+            <SelectField field="stop_name" selected="True" rename="OriginStopName" />
+            <SelectField field="ArrivalTimeDec" selected="True" rename="OriginStopTime" />
+            <SelectField field="Name" selected="True" rename="DestStopName" />
+            <SelectField field="Value" selected="True" rename="DestStopTime" />
             <SelectField field="*Unknown" selected="True" />
           </SelectFields>
         </Configuration>
@@ -785,13 +757,52 @@ ENDIF</Expression>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
     </Node>
-    <Node ToolID="66">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="1014" y="486" />
+    <Node ToolID="83">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1650" y="174" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_8724_c719f200b98b46c493b178c0e363c2f2\Engine_9240_a76e71246ea04b178453a211a3622cc9.yxdb</TempFile>
+          <FormulaFields>
+            <FormulaField field="DestStopName" type="String" size="1" expression="ReplaceChar(Replace(DestStopName, &quot;Avg_&quot;, &quot;&quot;), &quot;_&quot;, &quot; &quot;)" />
+            <FormulaField field="TimeBetweenStations" type="Double" size="8" expression="[DestStopTime]-[OriginStopTime]" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DestStopName=ReplaceChar(Replace(DestStopName, "Avg_", ""), "...
+TimeBetweenStations=[DestStopTime]-[OriginStopTime]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="85">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1842" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="OriginStopName" action="GroupBy" rename="OriginStopName" />
+            <SummarizeField field="DestStopName" action="GroupBy" rename="DestStopName" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="86">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="2922" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_5756_2af34004c4754bf08b66a5d0e43f0e1b\Engine_9240_485d037afd7f4fe88e3608c0744ff954.yxdb</TempFile>
           <Layout>
             <ViewMode>Single</ViewMode>
             <ViewSize value="100" />
@@ -810,22 +821,16 @@ ENDIF</Expression>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
     </Node>
-    <Node ToolID="67">
-      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
-        <Position x="882" y="426" />
+    <Node ToolID="88">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="1926" y="258" />
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_8724_c719f200b98b46c493b178c0e363c2f2\Engine_9240_45facd885afc436eb95bb65b0a0fd1c1.yxdb</TempFile>
-          <Layout>
-            <ViewMode>Single</ViewMode>
-            <ViewSize value="100" />
-            <View1>
-              <DefaultTab>Table</DefaultTab>
-              <Hints />
-            </View1>
-            <View2 />
-          </Layout>
+          <StartValue>1</StartValue>
+          <FieldName>TransitID</FieldName>
+          <FieldType>Int32</FieldType>
+          <Position>0</Position>
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -833,7 +838,481 @@ ENDIF</Expression>
           <Left value="False" />
         </Annotation>
       </Properties>
-      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="89">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="2274" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="OriginStopName" />
+            <Field field="DestStopName" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="OriginStopName" />
+            <Field field="DestStopName" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_OriginStopName" selected="False" rename="Right_OriginStopName" />
+                <SelectField field="Right_DestStopName" selected="False" rename="Right_DestStopName" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="810" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="stop_name" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Unique: stop_name</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="98">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="882" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <StartValue>1</StartValue>
+          <FieldName>StopRecordID</FieldName>
+          <FieldType>Int32</FieldType>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="99">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="942" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="stop_name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="stop_name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_stop_name" selected="False" rename="Right_stop_name" />
+                <SelectField field="Right_trip_id" selected="False" rename="Right_trip_id" />
+                <SelectField field="Right_arrival_time" selected="False" rename="Right_arrival_time" />
+                <SelectField field="Right_departure_time" selected="False" rename="Right_departure_time" />
+                <SelectField field="Right_stop_id" selected="False" rename="Right_stop_id" />
+                <SelectField field="Right_stop_sequence" selected="False" rename="Right_stop_sequence" />
+                <SelectField field="Right_stop_headsign" selected="False" rename="Right_stop_headsign" />
+                <SelectField field="Right_pickup_type" selected="False" rename="Right_pickup_type" />
+                <SelectField field="Right_drop_off_type" selected="False" rename="Right_drop_off_type" />
+                <SelectField field="Right_shape_dist_traveled" selected="False" rename="Right_shape_dist_traveled" />
+                <SelectField field="Right_route_id" selected="False" rename="Right_route_id" />
+                <SelectField field="Right_service_id" selected="False" rename="Right_service_id" />
+                <SelectField field="Right_trip_short_name" selected="False" rename="Right_trip_short_name" />
+                <SelectField field="Right_trip_headsign" selected="False" rename="Right_trip_headsign" />
+                <SelectField field="Right_direction_id" selected="False" rename="Right_direction_id" />
+                <SelectField field="Right_block_id" selected="False" rename="Right_block_id" />
+                <SelectField field="Right_shape_id" selected="False" rename="Right_shape_id" />
+                <SelectField field="Right_bikes_allowed" selected="False" rename="Right_bikes_allowed" />
+                <SelectField field="Right_stop_code" selected="False" rename="Right_stop_code" />
+                <SelectField field="Right_platform_code" selected="False" rename="Right_platform_code" />
+                <SelectField field="Right_stop_desc" selected="False" rename="Right_stop_desc" />
+                <SelectField field="Right_stop_lat" selected="False" rename="Right_stop_lat" />
+                <SelectField field="Right_stop_lon" selected="False" rename="Right_stop_lon" />
+                <SelectField field="Right_zone_id" selected="False" rename="Right_zone_id" />
+                <SelectField field="Right_stop_url" selected="False" rename="Right_stop_url" />
+                <SelectField field="Right_location_type" selected="False" rename="Right_location_type" />
+                <SelectField field="Right_parent_station" selected="False" rename="Right_parent_station" />
+                <SelectField field="Right_stop_timezone" selected="False" rename="Right_stop_timezone" />
+                <SelectField field="Right_agency_id" selected="False" rename="Right_agency_id" />
+                <SelectField field="Right_route_short_name" selected="False" rename="Right_route_short_name" />
+                <SelectField field="Right_route_long_name" selected="False" rename="Right_route_long_name" />
+                <SelectField field="Right_route_desc" selected="False" rename="Right_route_desc" />
+                <SelectField field="Right_route_type" selected="False" rename="Right_route_type" />
+                <SelectField field="Right_route_url" selected="False" rename="Right_route_url" />
+                <SelectField field="Right_route_color" selected="False" rename="Right_route_color" />
+                <SelectField field="Right_route_text_color" selected="False" rename="Right_route_text_color" />
+                <SelectField field="Right_ArrivalHour" selected="False" rename="Right_ArrivalHour" />
+                <SelectField field="Right_ArrivalTimeDec" selected="False" rename="Right_ArrivalTimeDec" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="100">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="738" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="stop_name" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="101">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1746" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>!IsNull([TimeBetweenStations])
+AND
+[TimeBetweenStations]&gt;=0</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([TimeBetweenStations])
+AND
+[TimeBetweenStations]&gt;=0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="102">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="2634" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="trip_id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="trip_id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_trip_id" selected="False" rename="Right_trip_id" />
+                <SelectField field="Right_route_id" selected="False" rename="Right_route_id" />
+                <SelectField field="Right_Right_OriginStopName" selected="True" rename="Right_Right_OriginStopName" />
+                <SelectField field="Right_Right_DestStopName" selected="True" rename="Right_Right_DestStopName" />
+                <SelectField field="Right_StopRecordID" selected="True" rename="Right_StopRecordID" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="103">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1026" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="departure_time" selected="False" />
+            <SelectField field="stop_headsign" selected="False" />
+            <SelectField field="pickup_type" selected="False" />
+            <SelectField field="drop_off_type" selected="False" />
+            <SelectField field="trip_headsign" selected="False" />
+            <SelectField field="block_id" selected="False" />
+            <SelectField field="shape_id" selected="False" />
+            <SelectField field="stop_code" selected="False" />
+            <SelectField field="zone_id" selected="False" />
+            <SelectField field="stop_url" selected="False" />
+            <SelectField field="parent_station" selected="False" />
+            <SelectField field="stop_timezone" selected="False" />
+            <SelectField field="route_url" selected="False" />
+            <SelectField field="ArrivalHour" selected="False" />
+            <SelectField field="Right_stop_name" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="104">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="2730" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>(
+[ArrivalTimeDec] &gt;= [OriginStopTime]
+AND
+[ArrivalTimeDec] &lt;= [DestStopTime]
+)
+OR
+(
+[ArrivalTimeDec] &lt;= [OriginStopTime]
+AND
+[ArrivalTimeDec] &gt;= [DestStopTime]
+)</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>(
+[ArrivalTimeDec] &gt;= [OriginStopTime]
+AND
+[ArrivalTimeDec] &lt;...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="108">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1134" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="arrival_time" selected="False" />
+            <SelectField field="stop_id" selected="False" />
+            <SelectField field="stop_sequence" selected="False" />
+            <SelectField field="shape_dist_traveled" selected="False" />
+            <SelectField field="service_id" selected="False" />
+            <SelectField field="trip_short_name" selected="False" />
+            <SelectField field="direction_id" selected="False" />
+            <SelectField field="bikes_allowed" selected="False" />
+            <SelectField field="platform_code" selected="False" />
+            <SelectField field="stop_desc" selected="False" />
+            <SelectField field="stop_lat" selected="False" />
+            <SelectField field="stop_lon" selected="False" />
+            <SelectField field="location_type" selected="False" />
+            <SelectField field="agency_id" selected="False" />
+            <SelectField field="route_short_name" selected="False" />
+            <SelectField field="route_long_name" selected="False" />
+            <SelectField field="route_desc" selected="False" />
+            <SelectField field="route_type" selected="False" />
+            <SelectField field="route_color" selected="False" />
+            <SelectField field="route_text_color" selected="False" />
+            <SelectField field="StopRecordID" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="109">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1350" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="trip_id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="trip_id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_trip_id" selected="False" rename="Right_trip_id" />
+                <SelectField field="Right_route_id" selected="False" rename="Right_route_id" />
+                <SelectField field="Right_stop_name" selected="False" rename="Right_stop_name" />
+                <SelectField field="Right_StopRecordID" selected="False" rename="Right_StopRecordID" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="110">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="2022" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="OriginStopName" />
+            <Field field="DestStopName" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="DestStopName" />
+            <Field field="OriginStopName" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_TransitID" selected="True" rename="Right_TransitID" />
+                <SelectField field="Right_OriginStopName" selected="True" rename="Right_OriginStopName" />
+                <SelectField field="Right_DestStopName" selected="True" rename="Right_DestStopName" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="115">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="2094" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression><![CDATA[[TransitID] <= [Right_TransitID] ]]></Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[[TransitID] <= [Right_TransitID] ]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="116">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2178" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Right_TransitID" selected="False" />
+            <SelectField field="Right_OriginStopName" selected="False" />
+            <SelectField field="Right_DestStopName" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="120">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="2382" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="OriginStopName" />
+            <Field field="DestStopName" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="DestStopName" />
+            <Field field="OriginStopName" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_OriginStopName" selected="True" rename="Right_OriginStopName" />
+                <SelectField field="Right_DestStopName" selected="True" rename="Right_DestStopName" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="121">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="2478" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
     </Node>
   </Nodes>
   <Connections>
@@ -867,19 +1346,15 @@ ENDIF</Expression>
     </Connection>
     <Connection>
       <Origin ToolID="15" Connection="Output" />
-      <Destination ToolID="41" Connection="Input" />
+      <Destination ToolID="99" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="98" Connection="Output" />
+      <Destination ToolID="99" Connection="Right" />
     </Connection>
     <Connection>
       <Origin ToolID="15" Connection="Output" />
-      <Destination ToolID="16" Connection="Input" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="15" Connection="Output" />
-      <Destination ToolID="62" Connection="Left" />
-    </Connection>
-    <Connection>
-      <Origin ToolID="15" Connection="Output" />
-      <Destination ToolID="65" Connection="Input" />
+      <Destination ToolID="100" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="18" Connection="Join" />
@@ -915,11 +1390,11 @@ ENDIF</Expression>
     </Connection>
     <Connection>
       <Origin ToolID="41" Connection="True" />
-      <Destination ToolID="33" Connection="Input" />
+      <Destination ToolID="34" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="41" Connection="True" />
-      <Destination ToolID="34" Connection="Input" />
+      <Destination ToolID="33" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="43" Connection="Output" />
@@ -930,28 +1405,128 @@ ENDIF</Expression>
       <Destination ToolID="43" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="62" Connection="Join" />
-      <Destination ToolID="12" Connection="Input" />
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="63" Connection="Output" />
       <Destination ToolID="47" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="63" Connection="Output" />
-      <Destination ToolID="35" Connection="Input" />
+      <Origin ToolID="79" Connection="Output" />
+      <Destination ToolID="109" Connection="Right" />
     </Connection>
     <Connection>
-      <Origin ToolID="64" Connection="Output" />
-      <Destination ToolID="66" Connection="Input" />
+      <Origin ToolID="108" Connection="Output" />
+      <Destination ToolID="109" Connection="Left" />
     </Connection>
     <Connection>
-      <Origin ToolID="65" Connection="Output" />
-      <Destination ToolID="64" Connection="Input" />
+      <Origin ToolID="81" Connection="Output" />
+      <Destination ToolID="82" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="65" Connection="Output" />
-      <Destination ToolID="67" Connection="Input" />
+      <Origin ToolID="82" Connection="Output" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Output" />
+      <Destination ToolID="101" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="85" Connection="Output" />
+      <Destination ToolID="88" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="110" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="88" Connection="Output" />
+      <Destination ToolID="110" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="89" Connection="Left" />
+      <Destination ToolID="120" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="120" Connection="Right" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="89" Connection="Join" />
+      <Destination ToolID="121" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="120" Connection="Join" />
+      <Destination ToolID="121" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="97" Connection="Unique" />
+      <Destination ToolID="98" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="99" Connection="Join" />
+      <Destination ToolID="103" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="100" Connection="Output" />
+      <Destination ToolID="97" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="True" />
+      <Destination ToolID="85" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="101" Connection="True" />
+      <Destination ToolID="89" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="116" Connection="Output" />
+      <Destination ToolID="89" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="102" Connection="Join" />
+      <Destination ToolID="104" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="103" Connection="Output" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="103" Connection="Output" />
+      <Destination ToolID="102" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="121" Connection="Output" />
+      <Destination ToolID="102" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="True" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="True" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="104" Connection="True" />
+      <Destination ToolID="86" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="108" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="109" Connection="Join" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="110" Connection="Join" />
+      <Destination ToolID="115" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="115" Connection="True" />
+      <Destination ToolID="116" Connection="Input" />
     </Connection>
   </Connections>
   <Properties>
@@ -971,7 +1546,7 @@ ENDIF</Expression>
     <LayoutType>Horizontal</LayoutType>
     <MetaInfo>
       <NameIsFileName value="True" />
-      <Name>PATHTransitFlow</Name>
+      <Name>PATHTransitFlowV2</Name>
       <Description />
       <CategoryName />
       <SearchTags />
