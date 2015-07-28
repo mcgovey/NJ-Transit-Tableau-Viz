@@ -1,0 +1,987 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="9.5">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stop_times.txt</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>stop_times.txt</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="trip_id" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stop_times.txt" type="V_WString" />
+            <Field name="arrival_time" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stop_times.txt" type="V_WString" />
+            <Field name="departure_time" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stop_times.txt" type="V_WString" />
+            <Field name="stop_id" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stop_times.txt" type="V_WString" />
+            <Field name="stop_sequence" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stop_times.txt" type="V_WString" />
+            <Field name="stop_headsign" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stop_times.txt" type="V_WString" />
+            <Field name="pickup_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stop_times.txt" type="V_WString" />
+            <Field name="drop_off_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stop_times.txt" type="V_WString" />
+            <Field name="shape_dist_traveled" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stop_times.txt" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\trips.txt</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>trips.txt</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="route_id" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\trips.txt" type="V_WString" />
+            <Field name="service_id" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\trips.txt" type="V_WString" />
+            <Field name="trip_id" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\trips.txt" type="V_WString" />
+            <Field name="trip_short_name" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\trips.txt" type="V_WString" />
+            <Field name="trip_headsign" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\trips.txt" type="V_WString" />
+            <Field name="direction_id" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\trips.txt" type="V_WString" />
+            <Field name="block_id" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\trips.txt" type="V_WString" />
+            <Field name="shape_id" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\trips.txt" type="V_WString" />
+            <Field name="bikes_allowed" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\trips.txt" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="162" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stops.txt</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>stops.txt</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="stop_id" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stops.txt" type="V_WString" />
+            <Field name="stop_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stops.txt" type="V_WString" />
+            <Field name="platform_code" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stops.txt" type="V_WString" />
+            <Field name="stop_name" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stops.txt" type="V_WString" />
+            <Field name="stop_desc" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stops.txt" type="V_WString" />
+            <Field name="stop_lat" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stops.txt" type="V_WString" />
+            <Field name="stop_lon" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stops.txt" type="V_WString" />
+            <Field name="zone_id" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stops.txt" type="V_WString" />
+            <Field name="stop_url" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stops.txt" type="V_WString" />
+            <Field name="location_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stops.txt" type="V_WString" />
+            <Field name="parent_station" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stops.txt" type="V_WString" />
+            <Field name="stop_timezone" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\stops.txt" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="174" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="trip_id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="trip_id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_trip_id" selected="False" rename="Right_trip_id" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="294" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="stop_id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="stop_id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_stop_id" selected="False" rename="Right_stop_id" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1734" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_8724_c719f200b98b46c493b178c0e363c2f2\Engine_9240_c3d3839c46db436da4cbf9531df819ea.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="486" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="trip_id" order="Ascending" />
+            <Field field="stop_sequence" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>trip_id - Ascending
+stop_sequence - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="678" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="ArrivalHour" type="Double" size="8" expression="ToNumber(&#xA;LEFT(arrival_time,&#xA;	FindString(arrival_time, &quot;:&quot;)&#xA;)&#xA;)" />
+            <FormulaField field="ArrivalTimeDec" type="Double" size="8" expression="ToNumber(&#xA;LEFT(arrival_time,&#xA;	FindString(arrival_time, &quot;:&quot;)&#xA;)&#xA;)+&#xA;(TONUMBER(SUBSTRING(arrival_time,3,2))/60)" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>ArrivalHour=ToNumber(
+LEFT(arrival_time,
+	FindString(arrival_...
+ArrivalTimeDec=ToNumber(
+LEFT(arrival_time,
+	FindString(arriv...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1014" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\TransitData.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>TransitData.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="270" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\routes.txt</File>
+          <FormatSpecificOptions>
+            <CodePage>28591</CodePage>
+            <Delimeter>,</Delimeter>
+            <IgnoreErrors>False</IgnoreErrors>
+            <FieldLen>254</FieldLen>
+            <AllowShareWrite>False</AllowShareWrite>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>routes.txt</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="agency_id" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\routes.txt" type="V_WString" />
+            <Field name="route_id" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\routes.txt" type="V_WString" />
+            <Field name="route_short_name" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\routes.txt" type="V_WString" />
+            <Field name="route_long_name" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\routes.txt" type="V_WString" />
+            <Field name="route_desc" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\routes.txt" type="V_WString" />
+            <Field name="route_type" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\routes.txt" type="V_WString" />
+            <Field name="route_url" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\routes.txt" type="V_WString" />
+            <Field name="route_color" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\routes.txt" type="V_WString" />
+            <Field name="route_text_color" size="254" source="File: C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\routes.txt" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="402" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="route_id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="route_id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_route_id" selected="False" rename="Right_route_id" />
+                <SelectField field="Left_Right_stop_id" selected="True" rename="Left_Right_stop_id" />
+                <SelectField field="Right_stop_id" selected="True" rename="Right_stop_id" />
+                <SelectField field="Right_stop_code" selected="True" rename="Right_stop_code" />
+                <SelectField field="Right_stop_name" selected="True" rename="Right_stop_name" />
+                <SelectField field="Right_stop_desc" selected="True" rename="Right_stop_desc" />
+                <SelectField field="Right_stop_lat" selected="True" rename="Right_stop_lat" />
+                <SelectField field="Right_stop_lon" selected="True" rename="Right_stop_lon" />
+                <SelectField field="Right_zone_id" selected="True" rename="Right_zone_id" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="582" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="trip_id" selected="True" type="Int64" size="8" />
+            <SelectField field="stop_id" selected="True" type="Int64" size="8" />
+            <SelectField field="stop_sequence" selected="True" type="Int64" size="8" />
+            <SelectField field="route_id" selected="True" type="Int64" size="8" />
+            <SelectField field="service_id" selected="True" type="Int64" size="8" />
+            <SelectField field="direction_id" selected="True" type="Int16" size="2" />
+            <SelectField field="block_id" selected="True" type="Int16" size="2" />
+            <SelectField field="shape_id" selected="True" type="Int16" size="2" />
+            <SelectField field="zone_id" selected="True" type="Int64" size="8" />
+            <SelectField field="agency_id" selected="True" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="870" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="route_id" action="GroupBy" rename="route_id" />
+            <SummarizeField field="trip_id" action="GroupBy" rename="trip_id" />
+            <SummarizeField field="stop_name" action="GroupBy" rename="stop_name" />
+            <SummarizeField field="ArrivalTimeDec" action="Min" rename="StopArrivalTime_ByTrip" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="870" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="route_id" action="GroupBy" rename="route_id" />
+            <SummarizeField field="trip_id" action="GroupBy" rename="trip_id" />
+            <SummarizeField field="ArrivalTimeDec" action="Min" rename="TripStartTime" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1710" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_8724_c719f200b98b46c493b178c0e363c2f2\Engine_9240_b197ce3c61d74ae88a7a0ac719447026.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1002" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="route_id" />
+            <Field field="trip_id" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="route_id" />
+            <Field field="trip_id" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_route_id" selected="False" rename="Right_route_id" />
+                <SelectField field="Right_trip_id" selected="False" rename="Right_trip_id" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1086" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="TimeToDest" type="Double" size="8" expression="[StopArrivalTime_ByTrip]-[TripStartTime]" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>TimeToDest=[StopArrivalTime_ByTrip]-[TripStartTime]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1182" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="route_id" action="GroupBy" rename="route_id" />
+            <SummarizeField field="stop_name" action="GroupBy" rename="stop_name" />
+            <SummarizeField field="TimeToDest" action="Avg" rename="Avg_TimeToDest" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1278" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="route_id" order="Ascending" />
+            <Field field="Avg_TimeToDest" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>route_id - Ascending
+Avg_TimeToDest - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="774" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Field>direction_id</Field>
+            <Operator>=</Operator>
+            <Operands>
+              <Operand>1</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[direction_id] = 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MultiRowFormula.MultiRowFormula">
+        <Position x="1470" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UpdateField value="False" />
+          <UpdateField_Name>route_id</UpdateField_Name>
+          <CreateField_Name>SequenceOrderFinal</CreateField_Name>
+          <CreateField_Type>Float</CreateField_Type>
+          <CreateField_Size>4</CreateField_Size>
+          <OtherRows>Empty</OtherRows>
+          <NumRows value="1" />
+          <Expression>IF [SequenceOrder]=[Row-1:SequenceOrder] AND 
+	[Row-1:SequenceOrder]!=0 THEN
+[SequenceOrder]+.0001
+ELSE
+[SequenceOrder]
+ENDIF</Expression>
+          <GroupByFields>
+            <Field field="route_id" />
+          </GroupByFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>IF [SequenceOrder]=[Row-1:SequenceOrder] AND 
+	[Row-1:Sequenc...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1374" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField field="SequenceOrder" type="Double" size="8" expression="[Avg_TimeToDest]+.0001" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SequenceOrder=[Avg_TimeToDest]+.0001</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1710" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="0">C:\Users\kevin.mcgovern\Documents\Blog\NJTransit\NJ-Transit-Tableau-Viz\TransitFullRouteData.csv</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <LineEndStyle>CRLF</LineEndStyle>
+            <Delimeter>,</Delimeter>
+            <ForceQuotes>False</ForceQuotes>
+            <HeaderRow>True</HeaderRow>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>TransitFullRouteData.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1554" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left" />
+          <JoinInfo connection="Right" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <SelectFields>
+                <SelectField field="Right_route_id" selected="True" rename="Right_route_id" />
+                <SelectField field="Right_stop_name" selected="True" rename="Right_stop_name" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1566" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="Avg_TimeToDest" selected="False" />
+            <SelectField field="SequenceOrder" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="918" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="trip_id" />
+            <Field field="route_id" />
+            <Field field="direction_id" />
+          </GroupFields>
+          <HeaderField field="stop_name" />
+          <DataField field="ArrivalTimeDec" />
+          <Methods>
+            <Method method="Avg" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="trip_id" source="CrossTab:Group:Avg:" type="Int64" />
+            <Field name="route_id" source="CrossTab:Group:Avg:" type="Int64" />
+            <Field name="direction_id" source="CrossTab:Group:Avg:" type="Int16" />
+            <Field name="Avg_9th_Street" source="CrossTab:Header:stop_name:9th Street:Avg:" type="Double" />
+            <Field name="Avg_14th_Street" source="CrossTab:Header:stop_name:14th Street:Avg:" type="Double" />
+            <Field name="Avg_23rd_Street" source="CrossTab:Header:stop_name:23rd Street:Avg:" type="Double" />
+            <Field name="Avg_33rd_Street" source="CrossTab:Header:stop_name:33rd Street:Avg:" type="Double" />
+            <Field name="Avg_Christopher_Street" source="CrossTab:Header:stop_name:Christopher Street:Avg:" type="Double" />
+            <Field name="Avg_Exchange_Place" source="CrossTab:Header:stop_name:Exchange Place:Avg:" type="Double" />
+            <Field name="Avg_Grove_Street" source="CrossTab:Header:stop_name:Grove Street:Avg:" type="Double" />
+            <Field name="Avg_Harrison" source="CrossTab:Header:stop_name:Harrison:Avg:" type="Double" />
+            <Field name="Avg_Hoboken" source="CrossTab:Header:stop_name:Hoboken:Avg:" type="Double" />
+            <Field name="Avg_Journal_Square" source="CrossTab:Header:stop_name:Journal Square:Avg:" type="Double" />
+            <Field name="Avg_Newark" source="CrossTab:Header:stop_name:Newark:Avg:" type="Double" />
+            <Field name="Avg_Newport" source="CrossTab:Header:stop_name:Newport:Avg:" type="Double" />
+            <Field name="Avg_World_Trade_Center" source="CrossTab:Header:stop_name:World Trade Center:Avg:" type="Double" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="trip_id" order="Asc" />
+            <Field field="route_id" order="Asc" />
+            <Field field="direction_id" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="774" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <SelectFields>
+            <SelectField field="arrival_time" selected="False" />
+            <SelectField field="departure_time" selected="False" />
+            <SelectField field="stop_id" selected="False" />
+            <SelectField field="stop_headsign" selected="False" />
+            <SelectField field="pickup_type" selected="False" />
+            <SelectField field="drop_off_type" selected="False" />
+            <SelectField field="shape_dist_traveled" selected="False" />
+            <SelectField field="service_id" selected="False" />
+            <SelectField field="trip_short_name" selected="False" />
+            <SelectField field="trip_headsign" selected="False" />
+            <SelectField field="block_id" selected="False" />
+            <SelectField field="shape_id" selected="False" />
+            <SelectField field="bikes_allowed" selected="False" />
+            <SelectField field="stop_code" selected="False" />
+            <SelectField field="platform_code" selected="False" />
+            <SelectField field="stop_desc" selected="False" />
+            <SelectField field="stop_lat" selected="False" />
+            <SelectField field="stop_lon" selected="False" />
+            <SelectField field="zone_id" selected="False" />
+            <SelectField field="stop_url" selected="False" />
+            <SelectField field="location_type" selected="False" />
+            <SelectField field="parent_station" selected="False" />
+            <SelectField field="stop_timezone" selected="False" />
+            <SelectField field="agency_id" selected="False" />
+            <SelectField field="route_short_name" selected="False" />
+            <SelectField field="route_long_name" selected="False" />
+            <SelectField field="route_desc" selected="False" />
+            <SelectField field="route_type" selected="False" />
+            <SelectField field="route_url" selected="False" />
+            <SelectField field="route_color" selected="False" />
+            <SelectField field="route_text_color" selected="False" />
+            <SelectField field="ArrivalHour" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1014" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_8724_c719f200b98b46c493b178c0e363c2f2\Engine_9240_a76e71246ea04b178453a211a3622cc9.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="882" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\KEVIN~1.MCG\AppData\Local\Temp\Engine_8724_c719f200b98b46c493b178c0e363c2f2\Engine_9240_45facd885afc436eb95bb65b0a0fd1c1.yxdb</TempFile>
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Table</DefaultTab>
+              <Hints />
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="6" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Join" />
+      <Destination ToolID="18" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="62" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="37" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="37" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Join" />
+      <Destination ToolID="38" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="True" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="True" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Join" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="64" Connection="Output" />
+      <Destination ToolID="66" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="65" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>PATHTransitFlow</Name>
+      <Description />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
